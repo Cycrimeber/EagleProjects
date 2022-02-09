@@ -1,0 +1,233 @@
+/* Portfolio begins */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial, Helvetica;
+  /* font-size: 10px; */
+}
+body {
+  background-color: lightgray;
+  /* color: var(--txtcolor); */
+  text-align: center;
+}
+
+/* Navigation styles begins here */
+#navContainer {
+  grid-area: nav;
+  box-shadow: 0px 0px 10px #d3d3d3;
+  /* height: 100px; */
+}
+#navContainer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clrPrimary);
+  color: var(--clrText);
+  height: 100%;
+  padding: 5px;
+}
+
+.siteLogo {
+  height: 100%;
+  width: auto;
+}
+.siteLogo img {
+  width: 100px;
+  height: 100%;
+  object-fit: contain;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a {
+  color: rgb(241, 229, 241);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav li a:hover {
+  text-shadow: 0 0 3px yellow;
+}
+
+/* Search box styling */
+.searchText {
+  font-size: 0.8rem;
+}
+
+#searchBox {
+  color: darkblue;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+  border: none;
+  outline: none;
+  width: 15em;
+  margin: 0 10px;
+  padding: 8px;
+}
+/* END OF NAV STYLING */
+
+/* STYLING THE MAIN CONTENT */
+main {
+  grid-column: content-start / content-end;
+  /* background-image: url(../img/bg_img.jpg); */
+}
+
+.mainContent {
+  display: flex;
+  margin-left: 50px;
+  /* background-color: purple; */
+  margin: 0 20px;
+}
+
+.mainContent .text {
+  /* padding-left: 20px; */
+  align-self: center;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.mainContent h1 {
+  /* color: white; */
+  font-size: 2.5rem;
+  font-family: roboto;
+  margin-bottom: 2rem;
+}
+
+.mainContent h1 span {
+  color: #800000;
+  display: block;
+  text-align: right;
+  font-family: cursive;
+  font-size: 2.8rem;
+}
+
+.mainContent p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 3rem;
+}
+/* Styling the buttons */
+
+.buttons a {
+  display: inline-block;
+  color: #ffe5d9;
+  background-color: #9d4b9e;
+  padding: 8px;
+  margin: 0 50px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  background-color: #ffe5d9;
+  color: #9d4b9e;
+  /* border: 1px solid #9d4b9e; */
+  box-shadow: 0 0 10px #9d4b9e;
+}
+
+.portfolio-img img {
+  width: 400px;
+  object-fit: contain;
+}
+/* END OF MAIN CONTENT STYLING */
+
+/* Services styling starts here */
+.services {
+  grid-area: services;
+  box-shadow: 0 0 10px gray;
+}
+
+.serviceItems {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.serviceBox {
+  background-color: #ffe5d9;
+  width: 100%;
+}
+
+.serviceBox h4 {
+  padding: 6px;
+  border-right: 1px solid #ffe5d9;
+  color: #ffe5d9;
+  background-image: linear-gradient(maroon, #ffe5d9);
+}
+
+.serviceBox p {
+  margin: 10px;
+  font-size: 0.7rem;
+  text-align: left;
+  font-family: "poppins";
+}
+
+/* STYLING THE FOOTER */
+footer {
+  grid-area: footer;
+  height: 100px;
+  z-index: 50;
+  display: flex;
+}
+
+footer > div {
+  padding-top: 50px;
+  text-align: end;
+  width: 50%;
+  font-size: 0.8em;
+}
+.info-2 {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.info-1 {
+  margin-right: 0;
+  padding-right: 20px;
+}
+/* END OF FOOTER STYLING */
+
+/* FLEXBOX TESTING */
+.inline-parent {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  border: 2px solid black;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inline-container {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  /* margin: auto; */
+}
+.inline {
+  border: 1px solid blue;
+  width: 100px;
+  margin: auto;
+}
+
+/* How a tooltip works */
+/* p {
+  display: none;
+  background-color: blue;
+  color: yellow;
+} */
+
+/* div:hover p {
+  display: block;
+  width: 200px;
+} */
+/* End of tooltip sample */
+/* GRID SYSTEM */
+
+/* .even-columns {
+  width: 100%;
+} */
